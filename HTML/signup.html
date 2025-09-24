@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link href="signup.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+            <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="signup">
+            <form name="registration" method="POST" action="signup.php">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Firstname" required name="prenom"> 
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Lastname" required name="nom">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required name="mail">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Phone" required name="tel">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required name="user">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required name="mdp">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn">Sign up</button>
+                <div class="register">
+                    <br>
+                    <a href="home.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

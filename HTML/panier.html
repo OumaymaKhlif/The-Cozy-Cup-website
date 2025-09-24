@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Cart</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link href="panier.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+        <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <form name="f">
+            <table>
+                <tr>
+                    <th><a href="products.html">Products</a></th>
+                    <th><b>Name</b></th>
+                    <th><b>Price</b></th>
+                    <th><b>Quantity</b></th>
+                    <th><b>Action</b></th>
+                </tr>
+                <tr>
+                    <td><img src="arabica.png"></td>
+                    <td>Arabica</td>
+                    <td>17.500 dt</td>
+                    <td><input type="number" value="0" name="l1" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer1()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="italiano.png"></td>
+                    <td>Italien</td>
+                    <td>20.000 dt</td>
+                    <td><input type="number" value="0" name="l2" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer2()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="colombiano.png"></td>
+                    <td>Robusta</td>
+                    <td>24.500 dt</td>
+                    <td><input type="number" value="0" name="l3" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer3()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="americanoProduct.png"></td>
+                    <td>Espresso</td>
+                    <td>26.000 dt</td>
+                    <td><input type="number" value="0" name="l4" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer4()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="lavazza.png"></td>
+                    <td>Lavazza</td>
+                    <td>30.000dt</td>
+                    <td><input type="number" value="0" name="l5" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer5()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="organic.png"></td>
+                    <td>Organic</td>
+                    <td>40.000 dt</td>
+                    <td><input type="number" value="0" name="l6" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer6()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="dark.jpg"></td>
+                    <td>Dark</td>
+                    <td>42.000 dt</td>
+                    <td><input type="number" value="0" name="l7" onchange="calculerTotal()" onchange min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer7()"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="natural.jpg"></td>
+                    <td>Natural</td>
+                    <td>45.000 dt</td>
+                    <td><input type="number" value="0" name="l8" onchange="calculerTotal()" min="0"></td>
+                    <td><i class="fas fa-trash-alt" id="poubelle" onclick="supprimer8()"></i></td>
+                </tr>
+                <tr class="total">
+                    <td><input type="button" value="Total " onclick="calculerTotal()" name="bouton">
+                        <input type="text" name="total">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    <script>
+        function calculerTotal() {
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer1(){
+            document.f.l1.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer2(){
+            document.f.l2.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer3(){
+            document.f.l3.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer4(){
+            document.f.l4.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer5(){
+            document.f.l5.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer6(){
+            document.f.l6.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer7(){
+            document.f.l7.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+        function supprimer8(){
+            document.f.l8.value=0;
+            t=((document.f.l1.value)*17.500+(document.f.l2.value)*20.000+(document.f.l3.value)*24.500+(document.f.l4.value)*26.000+(document.f.l5.value)*30.000+(document.f.l6.value)*40.000+(document.f.l7.value)*42.000+(document.f.l8.value)*45.000);
+            document.f.total.value=t+" dt";
+        }
+    </script>
+</html>

@@ -1,0 +1,234 @@
+body{
+    height:100vh;
+    background-color:#e7e5de;
+    background-position: center;
+    background-size: cover;
+}
+body header{
+    position:relative;
+    margin-top:0px;
+    margin-left:0px;
+    width:100%;
+    padding:20px;
+} 
+body header{
+    display:flex;
+    align-items:center;
+    max-width:1200px;
+    margin-left:100px;
+    justify-content:space-between;
+}
+body header .tiret{
+    color: transparent;
+}
+body header ul{
+    display:flex;
+    gap:60px;
+    list-style-type: none;
+    margin-left: 783px;
+}
+body header a{
+    font-weight:bold;
+    color:black;
+    text-decoration: none;
+    text-align: right;
+}
+body header img{
+    width:20px;
+    height:20px;
+}
+ body .products{
+    margin-bottom: 50px;
+ }
+body .products .p1{
+    font-size: 2rem;
+    max-width:600px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body .products .box .type{
+    color: #527b62;
+}
+.products .produits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    gap: 2rem;
+}
+.products .produits .box{
+    flex-direction:row;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px rgb(105, 77, 55);
+    width:85%;
+    margin:45px 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    transition: transform 0.3s ease;
+}
+.products .produits .box:hover{
+    transform: scale(1.2);
+}
+.products .produits .box a{
+    color:white;
+    text-decoration: none;
+    border: 3px solid rgb(105, 77, 55);
+    padding: 0px 25px;
+    border-radius: 100px;
+    background-color:rgb(105, 77, 55);
+}
+.products .produits img{
+    width:60%;
+    height:250px;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    background:#e7e5de;
+    border-radius: 100px;
+    
+}
+.products .produits .box h3{
+    font-size:1rem;
+    font-weight:600px;
+    text-transform: uppercase;
+    margin:0.5rem 0 0.5rem
+}
+.discount{
+    background-color: rgb(251, 252, 247,70%);
+    border-top-right-radius: 125px;
+}
+body .discount figure{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+body .discount h2{
+    padding-left:45px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body .discount h4{
+    padding-left: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body .discount .remise{
+    color:rgb(57, 107, 76);
+    font-size:27px;
+}
+body .discount .retour a{
+    color:white;
+    text-decoration: none;
+    background-color:rgb(57, 107, 76);
+    padding: 12px 30px;
+    border-radius: 100px;
+}
+body .discount .retour a:hover{
+    background-color:rgb(105, 77, 55);
+    color:white
+}
+body footer{
+    width:98.6%;
+    position:absolute;
+    background-image:linear-gradient(to right, rgb(57, 107, 76),#7d9c89);
+    color:black;
+    padding-left:  5px;
+    padding-right:  5px;
+    border-top-left-radius: 125px;
+    font-size: 17px;
+    line-height:20px;
+    margin-top: 80px;
+}
+body footer .row{
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+body footer .col{
+    flex-basis:15%;
+    padding:10px;
+}
+body footer .col:nth-child(2),body footer .col:nth-child(3){
+    flex-basis: 15%;
+}
+body footer img{
+    border-radius:50%;
+    max-width: 20px;
+    border: 1px dashed transparent;
+}
+body footer .espace{
+    color:transparent;
+}
+body footer .col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+body footer .col a{
+    width:fit-content;
+    margin:20px 0px;
+    color:black;
+    text-decoration: none;
+}
+body footer form .bande{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e5de;
+   margin-bottom:50px;
+}
+body footer form input{
+    width:100%;
+    background:transparent;
+    border:0px;
+    outline:none;
+}
+body footer form img{
+    border-radius:50%;
+    max-width: 50px;
+    border: 1px dashed #527b62;
+}
+body footer .socialMedia a{
+    text-decoration: none;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+body footer i{
+    font-size: 20px;
+}
+body footer .col .edit{
+    text-decoration:none;
+    color:black;
+}
+body footer .col .underline{
+    width: 100%;
+    height:5px;
+    background:#e7e5de;
+    border-radius:3px;
+    position: absolute;
+    top:25px;
+    left:0px;
+}
+body footer .col .underline span{
+    width:15px;
+    height:100%;
+    background:white;
+    border-radius: 3px;
+    position: absolute;
+    top:0px;
+    left:10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0%{
+        left:-20px;
+    }
+    100%{
+        left:100%;
+    }
+}

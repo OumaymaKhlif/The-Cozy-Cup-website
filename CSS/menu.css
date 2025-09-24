@@ -1,0 +1,190 @@
+body{
+    background-color:#e7e5de;
+}
+body section{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size:16px;
+    line-height:22px;
+    color: black;
+    background-color:#e7e5de;
+}
+
+body section .menu{
+    width:1170px;
+    margin:20px auto;
+}
+body section .menu .titre{
+    text-align:center;
+    margin-bottom:100px;
+}
+body section .menu .titre h2{
+    font-size:35px;
+    position: relative;
+    display: inline-block;
+    padding-bottom:10px;
+    margin-bottom:0px;
+}
+body section .menu .titre h2::before{ /*before est utilisée pour créer un pseudo élément qui est inséré avant le contenu de h2*/
+    content:'';
+    position: absolute;
+    width:60px;
+    height:2px;
+    background-color:rgb(57, 107, 76);
+    bottom:0px;
+    left:80%;
+    transform:translateX(-50%);
+}
+body section .titre p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body section .menu .cafe{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;/*si les éléments ne tiennet pas tous sur une seule ligne ils sont automatiquement répartis sur plusieurs lignes*/
+}
+body section .menu .cafe figure img{
+    border-radius:50%;
+    max-width: 116px;
+    border: 1px dashed #e7e5de;
+    padding:3px;
+    margin-right:18px;
+}
+body section .menu .cafe figure{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+body section .menu .cafe figcaption{
+    padding-left:30px;
+
+}
+body section .menu .prix{
+    color:rgb(57, 107, 76);
+    font-weight: bold;
+    float: right;
+    font-style: italic;
+}
+body section .retour{
+    padding-left: 100px;
+    font-size:20px;
+}
+body section .retour a{
+    color:black;
+    text-decoration: none;
+    border: 3px solid rgb(105, 77, 55);
+    padding: 0px 25px;
+    border-radius: 100px;
+}
+body section .retour a:hover{
+    background-color:rgb(105, 77, 55);
+    color:white
+}
+body footer{
+    width:98.8%;
+    position:absolute;
+    background-image:linear-gradient(to right, rgb(57, 107, 76),#7d9c89);
+    color:black;
+    padding-left:  5px;
+    padding-right:  5px;
+    border-top-left-radius: 125px;
+    font-size: 17px;
+    line-height:20px;
+    margin-top: 20px;
+}
+body footer .row{
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+body footer .col{
+    flex-basis:15%;
+    padding:10px;
+}
+body footer .col:nth-child(2),body footer .col:nth-child(3){
+    flex-basis: 15%;
+}
+body footer img{
+    border-radius:50%;
+    max-width: 20px;
+    border: 1px dashed transparent;
+}
+body footer .espace{
+    color:transparent;
+}
+body footer .col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+body footer .col a{
+    width:fit-content;
+    margin:20px 0px;
+    color:black;
+    text-decoration: none;
+}
+body footer form .bande{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e5de;
+   margin-bottom:50px;
+}
+body footer form input{
+    width:100%;
+    background:transparent;
+    border:0px;
+    outline:none;
+}
+body footer form img{
+    border-radius:50%;
+    max-width: 50px;
+    border: 1px dashed #527b62;
+}
+body footer .socialMedia ul{
+    display:flex;
+    gap:30px;
+    list-style-type: none;
+}
+body footer .socialMedia a{
+    text-decoration: none;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+body footer .col .edit{
+    text-decoration:none;
+    color:black;
+}
+body footer .col .underline{
+    width: 100%;
+    height:5px;
+    background:#e7e5de;
+    border-radius:3px;
+    position: absolute;
+    top:25px;
+    left:0px;
+}
+body footer .col .underline span{
+    width:15px;
+    height:100%;
+    background:white;
+    border-radius: 3px;
+    position: absolute;
+    top:0px;
+    left:10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0%{
+        left:-20px;
+    }
+    100%{
+        left:100%;
+    }
+}
